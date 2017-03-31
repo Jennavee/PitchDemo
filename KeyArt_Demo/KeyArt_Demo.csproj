@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B675BB22-21B3-F766-AB31-10ABEFB3FA75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile>Assets\smcs.rsp</CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>5.5.0f3</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PlaymodeTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="HoloLensXboxController">
+      <HintPath>Assets\zPlugins\HoloLensXboxControllerInput\Plugins\HoloLensXboxController.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Asset Depot\Scripts\Input\HandsManager.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\Input\cursorListening.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\Input\gazeEnterEvent.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\Input\gazeLeaveEvent.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\Input\handEnterEvent.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\Input\handLeaveEvent.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\Input\radialHands.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\Input\selectEvent.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\Input\sourceManager.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\UI\buttonHightlight.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\UI\lookAt.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\UI\metaManager.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\UI\popForward.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\UI\scrollController.cs" />
+    <Compile Include="Assets\Asset Depot\Scripts\UI\subMenu.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\AutoRotate.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\ChangeVideoExample.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\DemoInfo.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\FrameExtract.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\Mapping3D.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\SampleApp_Multiple.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\Scriptlets\ChangeAudioTrack.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\Scriptlets\PlaybackSync.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\Scriptlets\StartEndPoint.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\SimpleController.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\SphereDemo.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Scripts\VCR.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Components\ApplyToMaterial.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Components\ApplyToMesh.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Components\AudioOutput.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Components\CubemapCube.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Components\DisplayBackground.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Components\DisplayIMGUI.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Components\DisplayUGUI.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Components\MediaPlayer.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Components\Support\ApplyToTextureWidgetNGUI.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Components\Support\WaitFinished.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Components\UpdateStereoMaterial.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Internal\AndroidMediaPlayer.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Internal\BaseMediaPlayer.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Internal\Interfaces.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Internal\NullMediaPlayer.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Internal\OSXMediaPlayer.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Internal\WebGLMediaPlayer.cs" />
+    <Compile Include="Assets\zPlugins\AVPro\AVProVideo\Scripts\Internal\WindowsMediaPlayer.cs" />
+    <Compile Include="Assets\zPlugins\HoloLensXboxControllerInput\ControllerInputExample.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\ColorPicker\GazeableColorPicker.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\GazeRuler\Scripts\DeleteLine.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\GazeRuler\Scripts\IGeometry.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\GazeRuler\Scripts\IPolygonClosable.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\GazeRuler\Scripts\LineManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\GazeRuler\Scripts\MeasureManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\GazeRuler\Scripts\ModeTip.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\GazeRuler\Scripts\PolygonManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\GazeRuler\Scripts\Test\LineTest.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SavingSpatialMeshes\DebugText.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SavingSpatialMeshes\LevelManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SharingWithUNET\Scripts\BulletController.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SharingWithUNET\Scripts\GenericNetworkTransmitter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SharingWithUNET\Scripts\NetworkDiscoveryWithAnchors.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SharingWithUNET\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SharingWithUNET\Scripts\SharedAnchorDebugText.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SharingWithUNET\Scripts\SharedCollection.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SharingWithUNET\Scripts\UNetAnchorManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SpatialMappingComponent\DropCube.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SpatialUnderstanding\SpatialUnderstanding-FeatureOverview\Scripts\AppState.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SpatialUnderstanding\SpatialUnderstanding-FeatureOverview\Scripts\LevelSolver.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SpatialUnderstanding\SpatialUnderstanding-FeatureOverview\Scripts\LineDrawer.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SpatialUnderstanding\SpatialUnderstanding-FeatureOverview\Scripts\ShapeDefinition.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SpatialUnderstanding\SpatialUnderstanding-FeatureOverview\Scripts\SpaceVisualizer.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SpatialUnderstanding\SpatialUnderstanding-FeatureOverview\Scripts\SpatialUnderstandingBasicCursor.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SpatialUnderstanding\SpatialUnderstanding-FeatureOverview\Scripts\SpatialUnderstandingCursor.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit-Examples\SpatialUnderstanding\SpatialUnderstanding-FeatureOverview\Scripts\UI.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\CrossPlatform\Scripts\MetroHandleRef.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\CrossPlatform\Scripts\Reflection\ReflectionExtensions.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\CrossPlatform\Scripts\Reflection\TypeUtils.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\CrossPlatform\Scripts\SystemException.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Cursor\AnimatedCursor.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Cursor\Cursor.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Cursor\CursorModifier.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Cursor\ICursor.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Cursor\ICursorModifier.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Cursor\MeshCursor.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Cursor\ObjectCursor.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Cursor\SpriteCursor.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\GameControllerManipulator.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Gaze\BaseRayStabilizer.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Gaze\GazeManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Gaze\GazeStabilizer.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\HandGuidance.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\BaseInputEventData.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\HoldEventData.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\IFocusable.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\IHoldHandler.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\IInputClickHandler.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\IInputHandler.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\IManipulationHandler.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\INavigationHandler.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\ISourceStateHandler.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\ISpeechHandler.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\InputClickedEventData.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\InputEventData.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\ManipulationEventData.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\NavigationEventData.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\SourceStateEventData.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputEvents\SpeechKeywordRecognizedEventData.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputSources\BaseInputSource.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputSources\EditorHandsInput.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputSources\GesturesInput.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputSources\IInputSource.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\InputSources\RawInteractionSourcesInput.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Interactions\HandDraggable.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\KeyboardManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Microphone\MicStream.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\SetGlobalListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\UI\TriggerButton.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Utilities\AxisController.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Utilities\ButtonController.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Utilities\ManualGazeControl.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Utilities\ManualHandControl.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Voice\KeywordManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Voice\SpeechInputHandler.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Scripts\Voice\SpeechInputSource.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\ButtonObjectScaler.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\ButtonTimedWaiter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\DehydrationDeactivation.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\DisplayKeywords.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\DisplaySpeechKeywords.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\FocusedObjectColorChanger.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\FocusedObjectMessageSender.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\GazeResponder.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\InputHandleCallbackFX.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\InputTest.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\MicStreamDemo.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\OnFocusEvent.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\PopupMenu.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\ScaleObjectMessageReceiver.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\SelectedObjectMessageReceiver.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\SelectedObjectMessageSender.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\SimpleGridGenerator.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\SphereGlobalKeywords.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\SphereKeywords.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\TapResponder.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\TestButton.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\TestOverrideFocusedObject.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Input\Tests\Scripts\TogglePopupMenu.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\AnchorDownloadRequest.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\AudioManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\BoolElement.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\ClientConfig.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\ClientRole.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\DirectPairConnector.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\DirectPairReceiver.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\DiscoveredSystem.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\DiscoveryClient.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\DiscoveryClientAdapter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\DiscoveryClientListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\DoubleElement.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\Element.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\ElementType.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\FloatArrayElement.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\FloatArrayListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\FloatElement.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\IntArrayElement.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\IntArrayListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\IntElement.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\Listener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\Log.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\LogManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\LogSeverity.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\LogWriter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\LongElement.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\MachineSessionState.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\MessageChannel.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\MessageID.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\MessagePriority.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\MessageReliability.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\NetworkConnection.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\NetworkConnectionAdapter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\NetworkConnectionListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\NetworkInMessage.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\NetworkOutMessage.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\ObjectElement.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\ObjectElementAdapter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\ObjectElementListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\PairMaker.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\PairingAdapter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\PairingListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\PairingManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\PairingResult.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\Profile.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\ProfileManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\Receipt.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\Room.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\RoomManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\RoomManagerAdapter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\RoomManagerListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\Session.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\SessionListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\SessionManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\SessionManagerAdapter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\SessionManagerListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\SessionType.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\Settings.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\SharingClient.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\SharingClientPINVOKE.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\SharingManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\StringArrayElement.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\StringArrayListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\StringElement.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\SyncListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\SystemRole.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\TagImage.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\User.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\UserPresenceManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\UserPresenceManagerAdapter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\UserPresenceManagerListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\VisualPairConnector.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\VisualPairReceiver.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SDK\XString.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\ServerSessionsTracker.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SessionUsersTracker.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SharingStage.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\Spawning\PrefabSpawnManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\Spawning\SpawnManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\Spawning\SyncSpawnArray.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\Spawning\SyncSpawnedObject.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncArray.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncBool.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncDataAttributes.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncDouble.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncFloat.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncInteger.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncLong.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncObject.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncPrimitive.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncQuaternion.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncString.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncTransform.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncModel\SyncVector3.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncRoot.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncSettings.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\SyncStateListener.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\Unity\DefaultSyncModelAccessor.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\Unity\ISyncModelAccessor.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\Unity\TransformSynchronizer.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\Utilities\AutoJoinSession.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\Utilities\ConsoleLogWriter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\Utilities\DirectPairing.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\VoiceChat\MicrophoneReceiver.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Scripts\VoiceChat\MicrophoneTransmitter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Tests\Scripts\CustomMessages.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Tests\Scripts\ImportExportAnchorManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Tests\Scripts\RemoteHeadManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Tests\Scripts\RoomTest.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Tests\Scripts\SpawnTestKeyboardSpawning.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Tests\Scripts\SyncSpawnTestSphere.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Sharing\Tests\Scripts\UserNotifications.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\ObjectSurfaceObserver.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\FileSurfaceObserver.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\MeshSaver.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\RemoteMappingManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\RemoteMeshSource.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\RemoteMeshTarget.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\SimpleMeshSerializer.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\SpatialMappingManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\SpatialMappingObserver.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\SpatialMappingSource.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\PlaneFinding.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\RemoveSurfaceVertices.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\SurfaceMeshesToPlanes.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\SurfacePlane.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Scripts\TapToPlace.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Tests\Scripts\PlaneFindingTest.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Tests\Scripts\SpatialProcessingTest.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\AudioEmitter.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\AudioOccluder.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\IAudioInfluencer.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\UAudioManager\ActiveEvent.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\UAudioManager\AudioClip.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\UAudioManager\AudioContainer.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\UAudioManager\AudioEvent.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\UAudioManager\AudioSourcePlayClipExtension.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\UAudioManager\AudioSourcesReference.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\UAudioManager\MiniAudioEvent.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\UAudioManager\SpatialSoundSettings.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\UAudioManager\UAudioManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\UAudioManager\UAudioManagerBase.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialSound\Scripts\UAudioManager\UAudioMiniManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialUnderstanding\Scripts\SpatialUnderstanding.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialUnderstanding\Scripts\SpatialUnderstandingCustomMesh.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialUnderstanding\Scripts\SpatialUnderstandingDll.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialUnderstanding\Scripts\SpatialUnderstandingDllObjectPlacement.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialUnderstanding\Scripts\SpatialUnderstandingDllShapes.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialUnderstanding\Scripts\SpatialUnderstandingDllTopology.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\SpatialUnderstanding\Scripts\SpatialUnderstandingSourceMesh.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\Billboard.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\BitManipulator.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\CircularBuffer.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\DataEventArgs.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\DirectionIndicator.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\Extensions\ActionExtensions.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\Extensions\ComponentExtensions.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\Extensions\Extensions.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\Extensions\TransformExtensions.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\Extensions\VectorExtensions.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\FixedAngularSize.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\FpsDisplay.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\HeadsUpDirectionIndicator.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedColor.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedFloat.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedQuaternion.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedValue.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedVector2.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\InterpolatedValues\InterpolatedVector3.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\InterpolatedValues\QuaternionInterpolated.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\InterpolatedValues\Vector3Interpolated.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\InterpolationUtilities.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\Interpolator.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\MathUtils.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\NearPlaneFade.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\PriorityQueue.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\PropertyChangedEventArgsEx.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\SessionExtensions.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\SimpleTagalong.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\Singleton.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\SphereBasedTagalong.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\StabilizationPlaneModifier.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\Tagalong.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\TextToSpeechManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\Timer.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\TimerScheduler.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\Utils.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\VectorRollingStatistics.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Scripts\WorldAnchorManager.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Tests\Scripts\GestureResponder.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroup.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroupPicker.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Tests\Scripts\TextToSpeechManagerTest.cs" />
+    <Compile Include="Assets\zPlugins\HoloToolkit\Utilities\Tests\Scripts\TextToSpeechOnTap.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\SampleAssets\AniCrane\AnimationSpeed.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\PosterAlign\AnchorPersistence.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\PosterAlign\AutoAlignToPoster.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\PosterAlign\CalibrationZone.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\PosterAlign\ImagePosterLocator.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\PosterAlign\ImprovedSingletonBehavior.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\PosterAlign\PVCamManager.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\PosterAlign\PersistenceSaveLoad.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\PosterAlign\PosterDetectorAPI.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\PosterAlign\WorldPositionFromRays.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\PosterAlign\ZoneCalibrationManager.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\SupportingScripts\CameraControl.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\SupportingScripts\FocusPointController.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\SupportingScripts\Input\CursorManager.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\SupportingScripts\Input\CustomHoloLensInputModule.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\SupportingScripts\Input\GestureStateManager.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\SupportingScripts\Input\JoystickStateManager.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\SupportingScripts\Input\MouseStateManager.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\SupportingScripts\Input\StateManager.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\SupportingScripts\Input\WorldPointerEventData.cs" />
+    <Compile Include="Assets\zPlugins\posterAlign\Scripts\SupportingScripts\SpeechCommands.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\StreamingAssets\build_info.txt" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Materials\UI-Default-ExtraTexture.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Demos\Materials\UI-DefaultFont-ExtraTexture.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-Background-FullScreen.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-Background-FullScreenTransparent.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-IMGUI-Transparent.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-Lit-Diffuse.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-UI-Default-Stereo.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-UI-Default-Transparent.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-Unlit-AndroidOES.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-Unlit-Transparent.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-Unlit.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-VR-InsideSphere-AndroidOES.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-VR-InsideSphere-Transparent.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo-VR-InsideSphere.shader" />
+    <None Include="Assets\zPlugins\AVPro\AVProVideo\Resources\Shaders\AVProVideo.cginc" />
+    <None Include="Assets\zPlugins\AVPro\Android\AndroidManifest.xml" />
+    <None Include="Assets\zPlugins\HoloLensXboxControllerInput\README.txt" />
+    <None Include="Assets\zPlugins\HoloToolkit\Input\Shaders\Cursor.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Input\Shaders\CursorShader.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Input\Shaders\EditorHands.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Input\Shaders\SpecularHighlight.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Input\Tests\Shaders\button_unlit_shader.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Shaders\Occlusion.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Shaders\SpatialMappingTap.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\SpatialMapping\Shaders\Wireframe.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\SpatialUnderstanding\Materials\SpatialMappingSurface.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\SpatialUnderstanding\Materials\SpatialUnderstandingSurface.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\UI\Fonts\LICENSE.txt" />
+    <None Include="Assets\zPlugins\HoloToolkit\UI\Shaders\3DTextShader.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\BlinnPhongConfigurable.cginc" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\BlinnPhongConfigurable.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\BlinnPhongConfigurableTransparent.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\FastConfigurable.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\HoloToolkitCommon.cginc" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\LambertianConfigurable.cginc" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\LambertianConfigurable.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\LambertianConfigurableTransparent.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\StandardFast.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\UnlitConfigurable.cginc" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\UnlitConfigurable.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\UnlitConfigurableTransparent.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\UnlitNoDepthTest.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\VertexLitConfigurable.cginc" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\VertexLitConfigurable.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\VertexLitConfigurableTransparent.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\WindowOcclusion.shader" />
+    <None Include="Assets\zPlugins\HoloToolkit\Utilities\Shaders\macro.cginc" />
+    <None Include="Assets\zPlugins\posterAlign\Scripts\PosterAlign\Binaries\Copy_Plugin_DLLs_Here.txt" />
+    <None Include="Assets\zPlugins\posterAlign\Shaders\FastConfigurable.shader" />
+    <None Include="Assets\zPlugins\posterAlign\Shaders\HoloToolkitCommon.cginc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

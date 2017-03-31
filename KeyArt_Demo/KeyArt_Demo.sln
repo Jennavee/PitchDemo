@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyArt_Demo", "KeyArt_Demo.csproj", "{B675BB22-21B3-F766-AB31-10ABEFB3FA75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyArt_Demo.Editor", "KeyArt_Demo.Editor.csproj", "{EF1A5574-051E-8A8D-6481-C47B0A754262}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B675BB22-21B3-F766-AB31-10ABEFB3FA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B675BB22-21B3-F766-AB31-10ABEFB3FA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B675BB22-21B3-F766-AB31-10ABEFB3FA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B675BB22-21B3-F766-AB31-10ABEFB3FA75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF1A5574-051E-8A8D-6481-C47B0A754262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF1A5574-051E-8A8D-6481-C47B0A754262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF1A5574-051E-8A8D-6481-C47B0A754262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF1A5574-051E-8A8D-6481-C47B0A754262}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
